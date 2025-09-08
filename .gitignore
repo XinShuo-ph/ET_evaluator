@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment
+venv/
+.env
+
+# Data & Results
+/data/
+/results/
+
+# Secrets
+/secrets.toml
+*.key
