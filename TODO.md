@@ -6,17 +6,23 @@
 
 ### Phase 1: Project Scaffolding & Environment Setup
 
-*   [ ] **Create Project Directory:** I'll start by creating a dedicated directory for our new project.
+*   [x] **Create Project Directory:** I'll start by creating a dedicated directory for our new project.
     *   `mkdir ET_evaluator`
-*   [ ] **Set up Virtual Environment:** To keep dependencies clean, we should use a Python virtual environment.
-    *   `python3 -m venv ET_evaluator/venv`
-*   [ ] **Initial Project Structure:** I can create a standard directory structure to keep things organized.
+*   [x] **Set up Virtual Environment:** Using conda env `ET_evaluator`.
+    *   Conda version: 24.5.0
+    *   Python version: 3.12.2
+    *   Python path: /oak/stanford/orgs/kipac/users/xinshuo/miniconda/bin/python
+*   [x] **Initial Project Structure:** I can create a standard directory structure to keep things organized.
     *   `ET_evaluator/src` (for our scripts)
     *   `ET_evaluator/data` (to hold the Hugging Face dataset)
     *   `ET_evaluator/einsteintoolkit` (as the target for ET code)
     *   `ET_evaluator/results` (to store compilation/test outcomes)
-*   [ ] **Create `.gitignore`:** We'll need to exclude the virtual environment, API keys, and generated files from version control. I can create a standard Python `.gitignore` for this.
-*   [ ] **Clone Einstein Toolkit:** We need a local copy of the Einstein Toolkit to modify and compile. We can add it as a submodule for better version management.
+*   [x] **Create `.gitignore`:** We'll need to exclude the virtual environment, API keys, and generated files from version control. I can create a standard Python `.gitignore` for this.
+*   [x] **Clone Einstein Toolkit:** We need a local copy of the Einstein Toolkit to modify and compile. We can add it as a submodule for better version management.
+*   [x] **Setup Einstein Toolkit Container:**
+    *   Use the docker image `rynge/einsteintoolkit`.
+    *   Create a Singularity container.
+    *   Run the container to ensure it works.
 *   [ ] **Fetch Hugging Face Dataset:** Create a script (`./src/fetch_dataset.py`) to download and preprocess the dataset, saving it into the `./data` directory.
 
 ### Phase 2: Core Component Implementation

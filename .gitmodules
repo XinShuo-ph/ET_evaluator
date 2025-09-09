@@ -1,0 +1,3 @@
+[submodule "einsteintoolkit"]
+	path = einsteintoolkit
+	url = https://bitbucket.org/einsteintoolkit/einsteintoolkit.git

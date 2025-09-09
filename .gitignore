@@ -11,6 +11,7 @@ venv/
 # Data & Results
 /data/
 /results/
+/ET_container/
 
 # Secrets
 /secrets.toml
